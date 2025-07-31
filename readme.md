@@ -71,3 +71,64 @@ python main.cpython-313.pyc
 ```
 
 > Catatan : Dalam menjalankan program python ini jika program anda sudah sangat besar di sarankan untuk menggunakan cara compiler agar lebih cepat
+
+# Variabel
+di dalam python pembuatan python sangat mudah karna tidak memelukan keyword tambahan seperti di bahasa pemograman lain serta tidak perlu deklarasi tipe data nya
+
+## Penamaan variabel
+dalam penamaan varibel ada beberapa aturan dalam pembuatan namanya
+<table>
+    <tr>
+        <th>Contoh</th>
+        <th>Konfirmasi</th>
+        <th>Keterangan</th>
+    </tr>
+    <tr>
+        <td>10judul</td>
+        <td>Tidak boleh</td>
+        <td>dalam pembuatan variabel tidak boleh di awali number</td>
+    </tr>
+    <tr>
+        <td>judul10</td>
+        <td>boleh</td>
+        <td>salah satu contoh yang benar karna number tidak boleh di awal nama variabel</td>
+    </tr>
+    <tr>
+        <td>judul</td>
+        <td>boleh</td>
+        <td>Seperti pembuatan variabel pada umumnya</td>
+    </tr>
+    <tr>
+        <td>judul Belakang</td>
+        <td>tidak boleh</td>
+        <td>Tidak boleh ada spasi</td>
+    </tr>
+    <tr>
+        <td>judul-belakang</td>
+        <td>tidak boleh</td>
+        <td>Tidak boleh menggunakan min(-) karna di dalam python tanda tersebut di gunakan dalam operator aritmatika yaitu pengurangan</td>
+    </tr>
+    <tr>
+        <td>judulBelakang</td>
+        <td>boleh</td>
+        <td>Disarankan jika ingin menggunakan 2 kalimat menggunakan camel case</td>
+    </tr>
+    <tr>
+        <td>judul_belakang</td>
+        <td> boleh</td>
+        <td>Boleh memakai underscore untuk menyambung 2 kalimat dalam penamaan variabel</td>
+    </tr>
+</table>
+
+## Cara penggunaan
+```python
+nama = "Nugie kurniawan"
+print(nama)
+```
+
+## Hasil
+```bash
+Nugie kurniawan
+```
+
+> Catatan : Perhatikan dalam penamaan variabel agar sesuai dengan apa yang akan di tampung oleh variabel tersebut
