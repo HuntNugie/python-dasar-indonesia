@@ -132,3 +132,78 @@ Nugie kurniawan
 ```
 
 > Catatan : Perhatikan dalam penamaan variabel agar sesuai dengan apa yang akan di tampung oleh variabel tersebut
+
+# Tipe Data
+tipe data merupakan tipe dari sebuah nilai values nya ada beberapa tipe data utama di python 
+
+## Integer
+integer merupakan tipe data untuk angka bilangan bulat
+
+### Cara Penggunaan
+```python
+angka = 99
+print(angka)
+```
+
+### Hasil
+```
+99
+```
+## Float
+Float merupakan tipe data angka untuk bilangan desimal(pecahan)
+
+### Cara penggunaan
+```python
+phi = 3.14
+print(phi)
+```
+
+### Hasil
+```
+3.14
+```
+
+## String
+String merupakan tipe data untuk kumpulan huruf dan angka
+
+### Cara pengunaan
+```python
+nama = "Nugie kurniawan"
+print(nama)
+```
+
+### Hasil
+```
+Nugie kurniawan
+```
+
+## Boolean
+tipe data boolean merupakan tipe data yang hanya berisi 2 nilai yaitu True atau False
+
+### Cara Pengunaan
+```python
+ganteng = True
+print(ganteng)
+```
+
+### Hasil
+```
+True
+```
+
+## (Bonus) tipe data di bahasa C
+di dalam python kita juga dapat menggunakan tipe data dari bahasa C karna python sendiri di buat dengan bahasa C
+
+### Cara pengunaan
+```python
+# pertama kita harus import dulu modul nya
+from ctypes import c_double
+
+data_double = c_double(3.5)
+print(data_double.value)
+```
+
+### Hasil
+```
+3.5
+```
