@@ -207,3 +207,124 @@ print(data_double.value)
 ```
 3.5
 ```
+
+# Casting(konversi tipe data)
+Casting adalah sebuah istilah khusus untuk konversi(mengubah tipe data) tipe data di python 
+
+## Int(Integer)
+- int->float = akan dikonversi tipe data float contoh 8.0
+- int->string = akan dikonversi sebuah text string "8"
+- int->boolean = akan dikonversi False jika integer nya adalah 0 selain 0 akan True
+
+### Cara Penggunaan
+```py
+print("====INTEGER====")
+data_awal = 0
+print("data awal = ",data_awal,", tipe data = ",type(data_awal))
+
+data_float = float(data_awal)
+data_str = str(data_awal)
+data_boolean = bool(data_awal)
+
+print("data = ",data_float,", tipe data = ", type(data_float)) # akan di ubah menjadi float contoh 10.0
+print("data = ",data_str,", tipe data = ", type(data_str)) # akan di ubah menjadi text string
+print("data = ",data_boolean,", tipe data = ", type(data_boolean)) #akan menjadi true kecuali jika 0
+```
+
+### Hasil
+```
+====INTEGER====
+data awal =  0 , tipe data =  <class 'int'>
+data =  0.0 , tipe data =  <class 'float'>
+data =  0 , tipe data =  <class 'str'>
+data =  False , tipe data =  <class 'bool'>
+```
+
+## Float
+- float->int = akan di konversi menjadi int **contoh 5**
+- float->str = akan di konversi menjadi text "5"
+- float->bool = akan di konversi menjadi False jika di isi dengan 0 selain 0 akan menjadi True
+
+### Cara penggunaan
+```py
+print("====FLOAT====")
+data_awal = 8.9
+print("data awal = ",data_awal,", tipe data = ",type(data_awal))
+
+data_int = int(data_awal)
+data_str = str(data_awal)
+data_boolean = bool(data_awal)
+
+print("data = ",data_int,", tipe data = ", type(data_int)) # akan di ubah menjadi Int contoh 8
+print("data = ",data_str,", tipe data = ", type(data_str)) # akan di ubah menjadi text string
+print("data = ",data_boolean,", tipe data = ", type(data_boolean)) #akan menjadi true kecuali jika 0
+```
+
+### Hasil
+```
+====FLOAT====
+data awal =  8.9 , tipe data =  <class 'float'>
+data =  8 , tipe data =  <class 'int'>
+data =  8.9 , tipe data =  <class 'str'>
+data =  True , tipe data =  <class 'bool'>
+```
+
+## Bool(BOOLEAN)
+- bool->int = akan di konversi menjadi int jika nilai bool nya True maka akan menghasilkan 1 dan jika False akan menghasilkan 0
+- bool->float = akan di konversi menjadi float jika nilai bool nya True maka akan menghasilkan 1.0 dan jika False akan menghasilkan 0.0
+- bool->str = akan di konversi menjadi text string saja
+
+### Cara penggunaan
+```py
+print("====BOOLEAN====")
+data_awal = False
+print("data awal = ",data_awal,", tipe data = ",type(data_awal))
+
+data_int = int(data_awal)
+data_str = str(data_awal)
+data_float = float(data_awal)
+
+print("data = ",data_int,", tipe data = ", type(data_int)) # jika True akan menghasilkan int 1 jika false akan menghasilkan int 0
+print("data = ",data_str,", tipe data = ", type(data_str)) # akan di ubah menjadi text string
+print("data = ",data_float,", tipe data = ", type(data_float)) # jika True akan menghasilkan float 1.0 jika false akan menghasilkan 0.0
+```
+
+### Hasil
+```
+====BOOLEAN====
+data awal =  False , tipe data =  <class 'bool'>
+data =  0 , tipe data =  <class 'int'>
+data =  False , tipe data =  <class 'str'>
+data =  0.0 , tipe data =  <class 'float'>
+```
+
+## Str(String)
+- str->int = akan dikonversi menjadi int jika string nya berupa angka jika string berupa huruf maka akan error
+- str->float = akan di konversi menjadi float jika string nya berupa angka jika string berupa huruf maka akan error
+- str->bool = akan di konversi menjadi bool jika string tersebut ada isinya akan menghasilkan true dan jika string kosong akan menghasilkan false
+
+### Cara penggunaan
+```py
+print("====STRING====")
+data_awal = "30"
+print("data awal = ",data_awal,", tipe data = ",type(data_awal))
+
+data_int = int(data_awal) 
+data_boolean = bool(data_awal)
+data_float = float(data_awal)
+
+print("data = ",data_int,", tipe data = ", type(data_int)) # jika string nya adalah berupa angka akan terkonversi menjadi int kecuali jika string nya adalah huruf akan error
+print("data = ",data_boolean,", tipe data = ", type(data_boolean)) # jika string nya di isi akan menghasilkan true jika berupa string kosong maka akan menjadi false
+print("data = ",data_float,", tipe data = ", type(data_float)) # jika string nya adalah berupa angka akan terkonversi menjadi float kecuali jika string nya adalah huruf akan error
+```
+
+### Hasil
+```
+====STRING====
+data awal =  30 , tipe data =  <class 'str'>
+data =  30 , tipe data =  <class 'int'>
+data =  True , tipe data =  <class 'bool'>
+data =  30.0 , tipe data =  <class 'float'>
+```
+
+> Catatan : Berhati hati lah jika mau casting tipe data karna bukan hanya tipe data nya saja yang berubah isinya(**nilai**) juga akan menyesuaikan dengan konversi tipe data nya
