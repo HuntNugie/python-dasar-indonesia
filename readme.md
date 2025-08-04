@@ -328,3 +328,71 @@ data =  30.0 , tipe data =  <class 'float'>
 ```
 
 > Catatan : Berhati hati lah jika mau casting tipe data karna bukan hanya tipe data nya saja yang berubah isinya(**nilai**) juga akan menyesuaikan dengan konversi tipe data nya
+
+# input
+input merupakan sebuah fungsi bawaan dari python yang berfungsi untuk user bisa menginputkan langsung nilai langsung dari keyboard
+
+## Str(string)
+secara default inputan itu akan menghasilkan string
+
+### Cara penggunaan 
+```py
+nama = input("Masukkan nama anda : ") # jika inputan biasa itu apapun nilai nya akan di konversi jadi string
+print("String  = ",nama," ada ",len(nama)," karakter") # fungsi len untuk menghitung berapa banyak karakter dari string
+```
+
+### Hasil
+```
+Masukkan nama anda : Nugie kurniawan
+String  =  Nugie kurniawan  ada  15  karakter
+```
+
+## int(Integer)
+jika kita hanya ingin inputkan itu akan menghasilkan string maka kita wajib casting inputan tersebut menjadi int
+
+### Cara penggunaan
+```py
+# int
+integer = int(input("Masukkan angka integer : ")) # menggunakan casting int untuk bisa inputan nya hanya angka
+print("Integer = ",integer)
+```
+
+### Hasil
+```
+Masukkan angka integer : 5
+Integer =  5
+```
+
+## float
+jika ingin inputan nya menghasilkan nilai float maka kita juga harus casting inputan tersebut dengan fungsi float
+
+### Cara penggunaan
+```py
+# float
+floates = float(input("Masukkan angka float : ")) # menggunakan casting float untuk bisa inputan nya di isi angka float
+print("float = ",floates)
+```
+
+### Hasil
+```
+Masukkan angka float : 2.3
+float =  2.3
+```
+
+## bool(Boolean)
+jika kita ingin inputan nya hasilnya menjadi nilai boolean alangkah lebih baik nya kita memberi dulu casting dengan int baru casting bool karna hanya int yang konsisten terhadap nilai boolean
+
+### Cara penggunaan
+```py
+# bool
+boolean = bool(int(input("Masukkan angka (1/0) : ")))
+print("bool = ",boolean)
+```
+
+### Hasil
+```
+Masukkan angka (1/0) : 0
+bool =  False
+```
+
+> Catatan : casting pada inputan ini hanya akan mempengaruhi **nilai** nya saja untuk proses dari inputan nya masih tetap bebas menginputkan apapun
