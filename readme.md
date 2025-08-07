@@ -396,3 +396,174 @@ bool =  False
 ```
 
 > Catatan : casting pada inputan ini hanya akan mempengaruhi **nilai** nya saja untuk proses dari inputan nya masih tetap bebas menginputkan apapun
+
+# Operator logika
+operator logika merupakan operator yang bertugas untuk memanipulasi tipe data boolean
+
+**daftar operator logika**
+<table>
+    <tr>
+        <th>Simbol</th>
+        <th>nama Simbol</th>
+    </tr>
+    <tr>
+        <td>not</td>
+        <td>not(tidak)</td>
+    </tr>
+    <tr>
+        <td>or</td>
+        <td>or(atau)</td>
+    </tr>
+    <tr>
+        <td>and</td>
+        <td>and(dan)</td>
+    </tr>
+    <tr>
+        <td>^</td>
+        <td>xor</td>
+    </tr>
+</table>
+
+## NOT(kebalikan)
+not dalam operator logika berfungsi untuk membalikan nilai boolean jika true akan menjadi false dan jika false akan menjadi true
+
+### Cara penggunaan
+```py
+# not
+a = True
+c = not a
+
+print("========NOT========")
+print("Nilai awal = ",a)
+print('NOT')
+print("Nilai akhir = ",c)
+```
+
+### Hasil
+```
+========NOT========
+Nilai awal =  True
+NOT
+Nilai akhir =  False
+```
+
+## OR (atau)
+or dalam operator logika bisa di lakukan jika minimal ada 2 atau lebih boolean, untuk or akan bernilai true jika minimal saja salah satu true akan menghasilkan true
+
+### Cara penggunaan
+```py
+# or (akan true jika minimal salah satu true)
+a = True
+b = False
+c = a or b
+
+print("========OR========")
+
+print(a," OR ",b," = ",c)
+a = True
+b = True
+c = a or b
+
+print(a," OR ",b," = ",c)
+a = False
+b = True
+c = a or b
+
+print(a," OR ",b," = ",c)
+a = False
+b = False
+c = a or b
+
+print(a," OR ",b," = ",c)
+```
+
+### Hasil
+```
+========OR========
+True  OR  False  =  True
+True  OR  True  =  True
+False  OR  True  =  True
+False  OR  False  =  False
+```
+
+## AND(dan)
+and dalam operator logika akan bisa di gunakan jika terdapat 2 atau lebih nilai boolean, and akan bernilai true jika kedua nilai nya adalah true
+
+### Cara penggunaan
+```py
+# and (akan true jika kedua nya adalah true)
+a = True
+b = False
+c = a and b
+
+print("========AND========")
+
+print(a," AND ",b," = ",c)
+a = True
+b = True
+c = a and b
+
+print(a," AND ",b," = ",c)
+a = False
+b = True
+c = a and b
+
+print(a," AND ",b," = ",c)
+a = False
+b = False
+c = a and b
+
+print(a," AND ",b," = ",c)
+
+```
+
+### Hasil
+```
+========AND========
+True  AND  False  =  False
+True  AND  True  =  True
+False  AND  True  =  False
+False  AND  False  =  False
+```
+
+## XOR
+XOR dalam operasi logika dapat di gunakan jika minimal ada 2 atau lebih nilai boolean, xor akan bernilai true jika kedua nilai nya berbeda akan menghasilkan true
+
+### Cara penggunaan
+```py
+# xor (akan true jika salah satu harus true dan satunya lagi harus false)
+a = True
+b = False
+c = a ^ b
+
+print("========XOR========")
+
+print(a," XOR ",b," = ",c)
+a = True
+b = True
+c = a ^ b
+
+print(a," XOR ",b," = ",c)
+a = False
+b = True
+c = a ^ b
+
+print(a," XOR ",b," = ",c)
+a = False
+b = False
+c = a ^ b
+
+print(a," XOR ",b," = ",c)
+
+```
+
+### Hasil
+```
+========XOR========
+True  XOR  False  =  True
+True  XOR  True  =  False
+False  XOR  True  =  True
+False  XOR  False  =  False
+```
+
+> Catatan : untuk xor sebenernya bukan operator logika murni melainkan operator bitwise.
