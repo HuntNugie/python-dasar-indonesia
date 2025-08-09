@@ -555,6 +555,7 @@ c = a ^ b
 
 print(a," XOR ",b," = ",c)
 
+
 ```
 
 ### Hasil
@@ -567,3 +568,6 @@ False  XOR  False  =  False
 ```
 
 > Catatan : untuk xor sebenernya bukan operator logika murni melainkan operator bitwise.
+
+
+**sedang sakit jadi baru sampe sini**
