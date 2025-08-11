@@ -569,5 +569,173 @@ False  XOR  False  =  False
 
 > Catatan : untuk xor sebenernya bukan operator logika murni melainkan operator bitwise.
 
+# Operator aritmatika
+Operator aritmatika merupakan sebuah operator matematika dalam bahasa pemograman untuk mengoperasikan dan memanipulasi bilangan angka(integer,float)
+<br>
 
-**sedang sakit jadi baru sampe sini**
+**Daftar operator aritmatika**
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Nama Operasi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>+</code></td>
+      <td>Penjumlahan</td>
+    </tr>
+    <tr>
+      <td><code>-</code></td>
+      <td>Pengurangan</td>
+    </tr>
+    <tr>
+      <td><code>*</code></td>
+      <td>Perkalian</td>
+    </tr>
+    <tr>
+      <td><code>/</code></td>
+      <td>Pembagian (hasil <em>float</em>)</td>
+    </tr>
+    <tr>
+      <td><code>//</code></td>
+      <td>Pembagian Bulat (floor division)</td>
+    </tr>
+    <tr>
+      <td><code>%</code></td>
+      <td>Modulus (sisa bagi)</td>
+    </tr>
+    <tr>
+      <td><code>**</code></td>
+      <td>Pangkat (exponen)</td>
+    </tr>
+  </tbody>
+</table>
+
+## Urutan prioritas 
+1. kurung ()
+2. exponen(pangkat) **
+3. kali,bagi,floor division(pembagian bulat kebawah),modulus(sisa bagi) *,/,//,%
+4. tambah,kurang +,-
+
+## Pertambahan(+)
+Pertambahan seperti halnya di matematika berfungsi untuk menjumlahkan 2 atau lebih angka
+
+### Cara penggunaan
+```py
+a = 10
+b = 5
+# pertambahan
+hasil = a+b
+print(f"Hasil dari {a} + {b} adalah {hasil}")
+```
+
+### Hasil
+```
+Hasil dari 10 + 5 adalah 15
+```
+
+## Pengurangan(-)
+Seperti halnya di dalam matematika juga pengurangan disini berfungsi untuk mengurangi 2 angka atau lebih 
+
+### Cara penggunaan
+```py
+a = 10
+b = 5
+# pengurangan
+hasil = a-b
+print(f"Hasil dari {a} - {b} adalah {hasil}")
+```
+
+### Hasil
+```
+Hasil dari 10 - 5 adalah 5
+```
+
+## Pembagian(/)
+seperti halnya di matematika pembagian merupakan operasi matematik yang berfungsi untuk membagi antara 2 bilangan
+
+### Cara penggunaan
+```py
+a = 10
+b = 5
+# pembagian (otomatis tipe data nya adalah float)
+hasil = a/b
+print(f"Hasil dari {a} / {b} adalah {hasil} ")
+```
+
+### Hasil
+```
+Hasil dari 10 / 5 adalah 2.0 
+```
+
+## Perkalian(*)
+Seperti halnya di matematika pembagian merupakan operasi matematika yang berfungsi untuk mengkalikan antar 2 bilangan
+
+### Cara penggunaan
+```py
+a = 10
+b = 5
+# perkalian
+hasil = a*b
+print(f"Hasil dari {a} * {b} adalah {hasil}")
+```
+
+### Hasil
+```
+Hasil dari 10 * 5 adalah 50
+```
+
+
+## Exponen(**)
+operasi Exponen atau biasa di sebut operasi pangkat di dalam matematika
+
+### Cara penggunaan
+```py
+a = 10
+b = 5
+# exponen(pangkat)
+hasil = a**b
+print(f"Hasil dari {a} ** {b} adalah {hasil}")
+```
+
+### Hasil
+```
+Hasil dari 10 ** 5 adalah 100000
+```
+
+## Modulus(%)
+Modulus atau sering di sebut sisa bagi merupakan operasi yang akan menghasilkan nilai dari sisa bagia dari kedua nilai
+
+### Cara penggunaan
+```py
+a = 10
+b = 5
+# modulus(sisa bagi)
+hasil = a%b
+print(f"Hasil dari {a} % {b} adalah {hasil}")
+```
+### Hasil
+```
+Hasil dari 10 % 5 adalah 0
+```
+
+## Floor division(//)
+Floor division atau bisa di sebut juga pembagian bulat kebawah merupakan sebuah operasi pembagian tetapi akan menghasilkan tipe data integer serta akan membulatkan kebawah hasil dari pembagian nya
+
+### Cara penggunaan
+```py
+a = 10
+b = 5
+# floor division
+hasil = a//b
+print(f"Hasil dari {a} // {b} adalah {hasil}")
+```
+
+### Hasil
+```
+Hasil dari 10 // 5 adalah 2
+```
+
+> Catatan : hati hati dalam ingin menggunakan lebih dari 1 operator aritmatika ingat kembali urutan agar hasilnya sesuai yang di harapkan
