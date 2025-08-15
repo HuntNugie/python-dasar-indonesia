@@ -739,3 +739,134 @@ Hasil dari 10 // 5 adalah 2
 ```
 
 > Catatan : hati hati dalam ingin menggunakan lebih dari 1 operator aritmatika ingat kembali urutan agar hasilnya sesuai yang di harapkan
+
+# komparasi(perbandingan)
+operator komparasi(perbandingan) merupakan operator yang membandingkan 2 buah nilai atau lebih yang akan menghasilkan nilai boolean(true/false)
+
+## sama dengan(==)
+akan membandingkan 2 nilai apakah sama nilai nya jika iya maka akan menghasilkan true dan jika tidak akan menghasilkan false
+
+### Cara penggunaan
+```py
+a = 5
+b = 5
+hasil = a == b
+print(f"{a} == {b} = {hasil}")
+```
+
+### Hasil
+```
+5 == 5 = True
+```
+
+## tidak sama dengan(!=)
+akan membandingkan nilai apakah tidak sama dengan jika iya akan menghasilkan true jika tidak akan menghasilkan false
+
+### Cara penggunaan
+```py
+a = 5
+b = 5
+hasil = a!=b
+print(f"{a} != {b} = {hasil}")
+```
+
+### Hasil
+```
+5 != 5 = False
+```
+
+## lebih kecil dari(<)
+akan membandingkan nilai yang ada di sebelah kiri apakah lebih kecil dari yang sebelah kanan
+
+### Cara penggunaaan
+```py
+a = 5
+b = 5
+hasil = a < b
+print(f"{a} < {b} = {hasil}")
+```
+
+### Hasil
+```
+5 < 5 = False
+```
+
+## lebih besar dari(>)
+akan membandingkan apakah nilai yang ada di sebelah kiri lebih besar dari yang ada di sebelah kanan
+
+### Cara penggunaan
+```py
+a = 5
+b = 5
+hasil = a>b
+print(f"{a} > {b} = {hasil}")
+```
+
+### Hasil
+```
+5 > 5 = False
+```
+
+## lebih kecil dari atau sama dengan(<=)
+akan membandingkan nilai yang ada di sebelah kiri lebih kecil atau sama dengan nilai yang ada di sebelah kanan
+
+### Cara penggunaan
+```py
+a = 5
+b = 5
+hasil = a<=b
+print(f"{a} <= {b} = {hasil}")
+```
+
+### Hasil
+```
+5 <= 5 = True
+```
+
+## lebih besar dari atau sama dengan(>=)
+akan membandingkan apakah nilai yang ada di sebelah kiri lebih besar dari atau sama dengan nilai yang ada di sebelah kanan
+
+### Cara penggunaan
+```py
+a = 5
+b = 5
+hasil = a>=b
+print(f"{a} >= {b} = {hasil}")
+```
+
+### Hasil
+```
+5 >= 5 = True
+```
+
+## is(object indentiity)
+akan membandingkan apakah nilai object nya sama alamat nya memori nya sama 
+
+### Cara penggunaan
+```py
+a = 5
+b = 5
+hasil = a is b
+print(f"{a} is {b} = {hasil}")
+```
+
+### Hasil
+```
+5 is 5 = True
+```
+
+## is not(object indentitiy)
+akan membandingkan apakah alamat memori dari object nya tidak sama
+
+### Cara penggunaan
+```py
+a = 5
+b = 5
+hasil = a is not b
+print(f"{a} is not {b} = {hasil}")
+```
+
+### Hasil
+```
+5 is not 5 = False
+```
