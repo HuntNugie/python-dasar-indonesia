@@ -870,3 +870,113 @@ print(f"{a} is not {b} = {hasil}")
 ```
 5 is not 5 = False
 ```
+
+# assigment(penugasan)
+operator assigment atau bahasa indonesia nya adalah penugasan merupakan operator yang berfungsi untuk menugaskan variable sebelah kiri dengan nilai sebelah kanan
+
+## jenis jenis Operator assigment
+
+### +=(tambah)
+merupakan operasi assigment yang berfungsi untuk menambahkan nilai kiri dengan nilai kanan
+
+#### Cara penggunaan
+```py
+a = 2
+a += 3
+print(a)
+```
+
+#### Hasil
+```
+5
+```
+
+### -=(kurang)
+merupakan operasi yang mengkurangi nilai kiri dengan nilai kanan
+
+#### Cara penggunaan
+```py
+a = 5
+a -= 2
+print(a)
+```
+
+#### Hasil
+```
+3
+```
+
+### *=(kali)
+merupakan operasi assigment yang berfungsi untuk mengkalikan nilai kiri dengan nilai kanan
+
+#### Cara penggunaan
+```py
+a = 2
+a*=2
+print(a)
+```
+#### Hasil
+```
+4
+```
+
+### /=(bagi)
+merupakan operasi assigment yang berfungsi untuk membagi nilai kiri dengan nilai kanan
+
+#### Cara penggunaan
+```py
+a = 10
+a/=2
+print(a)
+```
+
+#### Hasil
+```
+5.0
+```
+
+### **= (exponen(pangkat))
+merupakan operasi assigment untuk mempangkatkan nilai kiri dengan nilai kanan
+
+#### Cara penggunaan
+```py
+a = 18.0
+a **= 2
+print(a)
+```
+#### Hasil
+```
+324.0 # hasilnya float karna operand nya float jika operand nya int maka hasilnya akan integer
+```
+
+### //= (floor division(pembagian bulat))
+merupakan operasi assigment yang berfungsi untuk membagi menjadi bulat nilai kiri dengan nilai kanan
+
+#### Cara penggunaan
+```py
+a = 10
+a//=3
+print(a)
+```
+
+#### Hasil
+```
+3
+```
+
+### %= (modulus(sisa bagi))
+merupakan operasi assigment yang berfungsi untuk mendapatkan sisa bagi dari pembagian nilai kiri dengan nilai kanan
+
+#### Cara penggunaan
+```py
+a = 10
+a %= 3
+print(a)
+```
+
+#### Hasil
+```
+1
+```
+
+> Catatan : Menggunakan operasi assigment intinya adalah akan merubah nilai yang ada di sebelah kiri dengan nilai kanan sesuai dengan operasi assigment apa yang di jalankan
