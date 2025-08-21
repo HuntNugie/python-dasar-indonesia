@@ -980,3 +980,48 @@ print(a)
 ```
 
 > Catatan : Menggunakan operasi assigment intinya adalah akan merubah nilai yang ada di sebelah kiri dengan nilai kanan sesuai dengan operasi assigment apa yang di jalankan
+
+# String
+string merupakan tipe data gabungan character character
+
+## Membuat string
+```py
+data = "Nugie"
+```
+
+## Penggunaan backslash
+di dalam string dapat di manipulasi dengan tambahan backslash
+
+### tab
+\t akan membuat seperti ada tab pada string
+```py
+print("Nugie\t\tNadin")
+```
+
+### new line
+\n akan membuat seperti di kasih enter
+```py
+print("Nugie\nNadin")
+```
+
+### backspace
+\b seperi akan menghapus/backspace karakter sebelum \b
+```py
+print("Nugie \bNadin")
+```
+
+### string literal atau raw
+string raw akan menghapus konversi backslash pada string
+```py
+print(r"C:\user\nugie")
+```
+
+### Multiline string
+string mulltiline sehingga di dalam quote nya akan di hitung semuanya menjadi character string maupun itu enter sekalipun
+
+```py
+print("""
+Nugie kurniawan
+nadin nugraha
+""")
+```
