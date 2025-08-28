@@ -1025,3 +1025,241 @@ Nugie kurniawan
 nadin nugraha
 """)
 ```
+
+# menggunakan method
+ada beberapa manipulasi string menggunakan method 
+
+## lower()
+berfungsi untuk membuat seluruh string menjadi kecil semua
+
+### Cara penggunaaan
+```py
+nama = "Nugie Kurniawan"
+nama = nama.lower()
+print(nama)
+```
+
+### Hasil
+```
+nugie kurniawan
+```
+
+## upper()
+berfungsi untuk membuat string menjadi besar semua
+
+### Cara penggunaan
+```py
+nama = "nadin nugraha"
+nama = nama.upper()
+print(nama)
+```
+
+### Hasil
+```
+NADIN NUGRAHA
+```
+
+## isalnum
+berfungsi untuk mengecek apakah karakter tersebut menggunakan kombinasi antara huruf dan number
+
+### Cara penggunaan
+```py
+teks = "nugie123"
+print(teks.isalnum())
+```
+
+### Hasil
+```
+True
+```
+
+## isalpha
+berfungsi untuk mengecek apakah kalimat karakter tersebut menggunakan huruf semua
+
+### Cara penggunaan
+```py
+teks = "nadin"
+print(teks.isalpha())
+```
+
+### Hasil
+```
+True
+```
+
+## isdecimal
+berfungsi untuk mengecek apakah kalimat karakter tersebut hanya mengandung angka saja atau tidak
+
+### Cara penggunaan
+```py
+teks = "123"
+print(teks.isdecimal())
+```
+
+### Hasil
+```
+True
+```
+
+## istitle
+berfungsi untuk mengecek kalimat karakter tersebut semuanya di awali dengan huruf besar di awalnya
+
+### Cara penggunaan
+```py
+teks = "Go Back Couple"
+print(teks.istitle())
+```
+
+### Hasil
+```
+True
+```
+
+## isspace
+berfungsi untuk mengecek apakah string tersebut string kosong yang hanya terdiri dari spasi,tab, ataupun newline
+
+### Cara penggunaan
+```py
+teks = "  \t"
+print(teks.isspace())
+```
+
+### Hasil
+```
+True
+```
+
+## islower
+berfungsi untuk mengecek apakah kalimat karakter tersebut karakter nya menggunakan huruf kecil semua
+
+### Cara penggunaan
+```py
+teks = "nugie"
+print(teks.islower())
+```
+
+### Hasil
+```
+True
+```
+
+## isupper
+berfungsi untuk mengecek apakah kalimat karakternya menggunakan huruf besar semua
+
+### Cara penggunaan
+```py
+teks = "NUGIE"
+print(teks.isupper())
+```
+
+### Hasil
+```
+True
+```
+
+## startswith
+berfungsi untuk mengecek apakah kalimat karakter pertama di suatu kalimat itu merupakan suatu kalimat lain
+
+### Cara penggunaan
+```py
+teks = "anjay guranjay"
+print(teks.startswith("anjay"))
+```
+
+### Hasil
+```
+True
+```
+
+## endswith
+berfungsi untuk mengecek kalimat terakhir dari suatu kalimat karakter merupakan suatu kalimat lain
+
+### Cara penggunaan
+```py
+teks = "go back couple"
+print(teks.endswith("couple"))
+```
+### Hasil
+```
+True
+```
+
+## join
+berfungsi untuk menggabungkan data array atau list menjadi satu string
+
+### Cara penggunaan
+```py
+data = ["aku","sayang"] 
+print(",".join(data))
+```
+
+### Hasil
+```
+aku,sayang
+```
+
+## split
+berfungsi untuk mengpisahkan string menjadi bentuk array atau list
+
+### Cara penggunaan
+```py
+data = "akukyahsayang"
+print(data.split("kyah"))
+```
+
+### Hasil
+```
+["aku","sayang"]
+```
+
+## rjust
+berfungsi untuk membuat string menjadi ada di kanan
+
+### Cara penggunaan
+```py
+print("kanan".rjust(10,"="))
+```
+
+### Hasil
+```
+=====kanan
+```
+
+## ljust
+berfungsi untuk membuat string berada di sebelah kiri
+
+### Cara penggunaan
+```py
+print("kiris".ljust(10,"="))
+```
+### Hasil
+```
+kiris=====
+```
+
+## center
+berfungsi untuk agar string menjadi di tengah
+
+### Cara penggunaan
+```py
+print("tngh".center(10,"="))
+```
+
+### Hasil
+```
+===tngh===
+```
+
+## strip
+berfungsi untuk menghapus karakter khusus di sebuah string
+
+### Cara penggunaan
+```py
+teks = "tngh".center(10,"=")
+print(teks.strip("="))
+```
+
+### Hasil
+```
+tngh
+```
